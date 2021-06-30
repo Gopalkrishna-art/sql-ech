@@ -1,0 +1,57 @@
+<h1>output tables</h1>
+<table id="first">
+<tr><th>season</th><th>count</th></tr>
+  <tr>
+      {{#each matchesPlayedPer}}
+      
+    <th>{{this.season}}</th>
+    <th>{{this.matchesplayed}}</th>
+   
+  </tr>
+  
+
+
+{{/each}}
+</table>
+
+    
+
+    <table id="second">
+        <tr ><th>season</th><th>teams</th><th>count</th></tr>
+  <tr>
+      {{#each matchesWonPerteam}}
+    <th>{{this.season}}</th>
+    <th>{{this.team1}}</th>
+    <th>{{this.count}}</th>
+  </tr>
+  
+
+
+{{/each}}
+</table>
+<table id="third">
+<tr><th>team1</th><th>count</th></tr>
+  <tr>
+      {{#each extraRun2016}}
+      
+    <th>{{this.team1}}</th>
+    <th>{{this.sum}}</th>
+   
+  </tr>
+  
+
+
+{{/each}}
+<table id="fourth">
+<tr><th>players</th><th>Runs_in_2015</th></tr>
+  <tr>
+      {{#each topEcomical}}
+      
+    <th>{{this.player_name}}</th>
+    <th>{{this.total_runs_in_2015 }}</th>
+   
+  </tr>
+  
+
+
+{{/each}}
